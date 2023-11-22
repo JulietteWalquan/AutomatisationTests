@@ -12,17 +12,17 @@ ${BROWSER}           ff
 *** Keywords ***
 Debut du test
     Open Browser    ${PETSTORE-URL}    ${BROWSER}
-    Sleep    1
+    Sleep    2
     Page Should Contain    Welcome to JPetStore 6
 
 Cliquer sur le lien "Enter the Store"
     Click Element    ${link-enter}
-    Sleep        1
+    Sleep        2
     Page Should Contain Element    ${image-mainPage}
 
 Cliquer sur le lien "Sign In"
     Click Element    ${link-signIn}
-    Sleep        1
+    Sleep        2
     Page Should Contain    Please enter your username and password.
 
 Fin du test
