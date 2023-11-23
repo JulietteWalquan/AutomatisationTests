@@ -8,13 +8,13 @@ Resource         FormVariables.resource
 
 
 *** Variables ***
-${csvPath}           projet/data/users.csv
+${csvPath}           TP1/projet/data/users.csv
 
 
 *** Keywords ***
 Cliquer sur le lien "Register Now!"
     Click Element    ${link-register}
-    Sleep        1
+    Sleep        2
     Page Should Contain   User Information
 
 Renseigner les informations du formulaire
@@ -38,37 +38,37 @@ Renseigner les informations du formulaire
     Append To Csv File    ${csvPath}    ${data}
 
     Input Text    ${input-userID}    ${userID}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-password}    ${password}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-repeatedPassword}    ${password}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-firstName}    ${firstName}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-lastName}    ${lastName}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-email}    ${email}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-phone}    ${phone}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-address}    ${address}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-city}    ${city}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-state}    ${state}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-zip}    ${zip}
-    Sleep    1
+    Sleep    2
     Input Text    ${input-country}    ${country}
-    Sleep    1
+    Sleep    2
     Select From List By Value    ${input-favouriteCategory}    ${favouriteCategory}
-    Sleep    1
+    Sleep    2
     Click Element    ${input-enableMyList}
-    Sleep    1
+    Sleep    2
     Click Element    ${input-enableMyBanner}
-    Sleep    1
+    Sleep    2
 
 Cliquer sur le bouton "Save Account Information"
     Click Element    ${link-saveAccount}
-    Sleep    1
+    Sleep    2
     Page Should Contain Element    ${image-mainPage}
