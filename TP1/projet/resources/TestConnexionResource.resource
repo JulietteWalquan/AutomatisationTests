@@ -17,5 +17,5 @@ Renseigner les informations de connexion
 Cliquer sur le bouton Login
     Click Button    ${link-signon}
     Sleep    2
-    Page Should Contain    My Account
+    Page Should Contain    Welcome David!
 

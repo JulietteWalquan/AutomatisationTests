@@ -5,8 +5,9 @@ Resource         GeneralVariables.resource
 
 
 *** Variables ***
-${PETSTORE-URL}      https://petstore.octoperf.com
-${BROWSER}           ff
+${PETSTORE-URL}              https://petstore.octoperf.com
+${PETSTORE-URL-CONNEXION}    https://petstore.octoperf.com/actions/Account.action?signonForm=
+${BROWSER}                   ff
 
 
 *** Keywords ***
@@ -14,6 +15,10 @@ Debut du test
     Open Browser    ${PETSTORE-URL}    ${BROWSER}
     Sleep    2
     Page Should Contain    Welcome to JPetStore 6
+
+Debut du test sur la page de connexion
+    Open Browser    ${PETSTORE-URL-CONNEXION}    ${BROWSER}
+    Sleep    2
 
 Cliquer sur le lien "Enter the Store"
     Click Element    ${link-enter}
