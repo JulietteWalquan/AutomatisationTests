@@ -1,14 +1,14 @@
 *** Settings ***
-Documentation       TP1 BUT3 Exercice 4 : Accéder à un site web via un jeu de données d'un fichier xls
+Documentation       TP1 BUT3 Exercice 4 : Acceder a un site web via un jeu de donnees d'un fichier xls
 Library             SeleniumLibrary
 Library             DataDriver    ../data/loginPassword.xlsx
 Test Setup    Debut du test
 Test Teardown    Fin du test
 Resource        ../resources/ResourcesEx3&4.resource
-Test Template    Tester l'accès au site via le jeu de données
+Test Template    Tester l'acces au site via le jeu de donnees
 
 *** Keywords ***
-Tester l'accès au site via le jeu de données
+Tester l'acces au site via le jeu de donnees
     [Arguments]    ${login}    ${password}    ${errorMessage}
     Input Text    ${input-username}    ${login}
     sleep    2

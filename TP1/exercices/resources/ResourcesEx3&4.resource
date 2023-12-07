@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Ressources pour le TP1 BUT3 Exercice 3 & 4 : Accéder à un site web via un jeu de données d'un fichier csv ou xlsx
+Documentation    Ressources pour le TP1 BUT3 Exercice 3 & 4 : Acceder a un site web via un jeu de donnees d'un fichier csv ou xlsx
 Library       SeleniumLibrary
 
 *** Variables ***

@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       TP1 BUT3 Exercice 1 : Connexion à l'ENT
+Documentation       TP1 BUT3 Exercice 1 : Connexion a l'ENT
 Library             SeleniumLibrary
 
 
@@ -14,23 +14,23 @@ Ouvrir Google avec le navigateur Firefox
     sleep    2
     Click Element    //*[@id="L2AGLb"]
 
-Test Chercher le site de l'université
+Test Chercher le site de l'universite
     Click element    //*[@id="APjFqb"]
-    Input Text    name=q    Le Mans Université
+    Input Text    name=q    Le Mans Universite
     Press keys    name=q    RETURN
     sleep    2
 
-Aller sur l'ENT de l'université
-    Click Element    //*[contains(text(), "ENT étudiant")]
+Aller sur l'ENT de l'universite
+    Click Element    //*[contains(text(), "ENT etudiant")]
     sleep    2
 
 Aller sur la page d'activation d'un compte
     sleep    2
     Click element    //*[@id="header-a1"]
 
-Activation de compte pour un étudiant
+Activation de compte pour un etudiant
     sleep    2
-    Click element    //*[@href="?act=etu" and contains(text(), "Activation de compte pour un étudiant")]
+    Click element    //*[@href="?act=etu" and contains(text(), "Activation de compte pour un etudiant")]
     sleep    2
 
 Fermer le navigateur

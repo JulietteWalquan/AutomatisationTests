@@ -18,10 +18,15 @@ Connecter un utilisateur au site
     Sleep    2
     Page Should Contain    Welcome Nathalie!
 
-Déconnecter l'utilisateur du site
+Deconnecter l'utilisateur du site
     Click Button    ${link-signout}
     Sleep    2
     Page Should Not Contain    Walcome Nathalie!
+
+Retourner sur la page d'accueil
+    Click Element    ${link-home}
+    Sleep    2
+    Page Should Contain Element    ${image-mainPage}
 
 Aller sur la page des poissons avec le lien en haut de page
     Click Element    ${link-fish-top}
@@ -32,11 +37,7 @@ Aller sur la page des poissons avec le lien de gauche
     Click Element    ${link-fish-left}
     Sleep    2
     Page Should Contain    Fish
-
-Aller sur la page des poissons avec le lien de l'image
-    Click Element    ${link-fish-image}
-    Sleep    2
-    Page Should Contain    Fish
+    Retourner sur la page d'accueil
 
 Aller sur la page des chiens avec le lien en haut de page
     Click Element    ${link-dogs-top}
@@ -47,11 +48,7 @@ Aller sur la page des chiens avec le lien de gauche
     Click Element    ${link-dogs-left}
     Sleep    2
     Page Should Contain    Dogs
-
-Aller sur la page des chiens avec le lien de l'image
-    Click Element    ${link-dogs-image}
-    Sleep    2
-    Page Should Contain    Dogs
+    Retourner sur la page d'accueil
 
 Aller sur la page des reptiles avec le lien en haut de page
     Click Element    ${link-reptiles-top}
@@ -62,11 +59,7 @@ Aller sur la page des reptiles avec le lien de gauche
     Click Element    ${link-reptiles-left}
     Sleep    2
     Page Should Contain    Reptiles
-
-Aller sur la page des reptiles avec le lien de l'image
-    Click Element    ${link-reptiles-image}
-    Sleep    2
-    Page Should Contain    Reptiles
+    Retourner sur la page d'accueil
 
 Aller sur la page des chats avec le lien en haut de page
     Click Element    ${link-cats-top}
@@ -77,11 +70,7 @@ Aller sur la page des chats avec le lien de gauche
     Click Element    ${link-cats-left}
     Sleep    2
     Page Should Contain    Cats
-
-Aller sur la page des chats avec le lien de l'image
-    Click Element    ${link-cats-image}
-    Sleep    2
-    Page Should Contain    Cats
+    Retourner sur la page d'accueil
 
 Aller sur la page des oiseaux avec le lien en haut de page
     Click Element    ${link-birds-top}
@@ -92,13 +81,4 @@ Aller sur la page des oiseaux avec le lien de gauche
     Click Element    ${link-birds-left}
     Sleep    2
     Page Should Contain    Birds
-
-Aller sur la page des oiseaux avec le lien de l'image
-    Click Element    ${link-birds-image}
-    Sleep    2
-    Page Should Contain    Birds
-
-Retourner sur la page d'accueil
-    Click Element    ${link-home}
-    Sleep    2
-    Page Should Contain Element    ${image-mainPage}
+    Retourner sur la page d'accueil

@@ -1,0 +1,21 @@
+1701939288933	geckodriver	INFO	Listening on 127.0.0.1:56080
+1701939292028	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilehT4lh6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701939292607	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701939292757	Marionette	INFO	Listening on port 56088
+WebDriver BiDi listening on ws://127.0.0.1:56081
+Read port: 56088
+1701939293101	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56081/devtools/browser/ee6173f3-785a-4c6b-a48e-c9a57534df43
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.fr."
+1701939310167	Marionette	INFO	Stopped listening on port 56088
+JavaScript warning: https://www.youtube.com/s/player/31e0b6d9/player_ias.vflset/fr_FR/base.js, line 1920: Script terminated by timeout at:
+g.DB/<@https://www.youtube.com/s/player/31e0b6d9/player_ias.vflset/fr_FR/base.js:1920:49
+
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBDatabase::Msg_PBackgroundIDBTransactionConstructor Value error: message was deserialized, but contained an illegal value
+

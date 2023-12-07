@@ -14,17 +14,17 @@ Ouvrir Amazon avec le navigateur Firefox
     sleep    2
     Click Element    //*[@id="sp-cc-accept"]
 
-Saisir un mot-clé dans la page de recherche
+Saisir un mot-cle dans la page de recherche
     Input Text    id=twotabsearchtextbox    Lenovo IdeaPad Slim 3 Chrome
     sleep    2
     Click Element    //*[@id="nav-search-submit-button"]
     sleep    2
 
-Vérifier que la page s'affiche correctement
-    Page Should Contain    résultats pour
+Verifier que la page s'affiche correctement
+    Page Should Contain    resultats pour
     sleep    2
 
-Vérifier que les résultats de recherche contiennent l'article
+Verifier que les resultats de recherche contiennent l'article
     Page Should Contain    Lenovo IdeaPad Slim 3 Chrome
     sleep    2
 Fermer le navigateur

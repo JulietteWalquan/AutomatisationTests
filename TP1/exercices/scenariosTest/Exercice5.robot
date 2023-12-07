@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    TP1 BUT3 Exercice 5 : Générer des données aléatoires avec la librairie Faker
+Documentation    TP1 BUT3 Exercice 5 : Generer des donnees aleatoires avec la librairie Faker
 Library    FakerLibrary    locale=fr
 Library    CSVLibrary
 Library    SeleniumLibrary
