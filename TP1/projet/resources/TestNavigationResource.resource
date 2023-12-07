@@ -1,9 +1,8 @@
 *** Settings ***
-Documentation    Ressources pour le TP1 BUT3 Projet : Test de la connecion sur le site https://petstore.octoperf.com
+Documentation    Ressources pour le TP1 BUT3 Projet : Test de navigation sur le site https://petstore.octoperf.com
 Resource         ../resources/FormVariables.resource
 Resource         ../resources/GeneralVariables.resource
 Library          SeleniumLibrary
-Resource         FormVariables.resource
 
 
 *** Keywords ***

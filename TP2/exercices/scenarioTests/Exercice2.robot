@@ -6,10 +6,10 @@ Resource         ../resources/PathResources.resource
 
 
 *** Variables ***
-${pathToGo}    ../PDF/
+${pathToGo}    TP2/exercices/resources/PDF/
 
 
 *** Test Cases ***
 Deplacer un fichier PDF
-    Copy File      ${pathPDF-cours1}    ${pathToGo}
-    Remove File    ${pathPDF-cours1}
+    Copy File      ${pathPDF-cours2}    ${pathToGo}
+    Remove File    ${pathPDF-cours2}

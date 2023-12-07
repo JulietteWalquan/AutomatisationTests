@@ -11,7 +11,7 @@ ${text}
 
 *** Test Cases ***
 Ouvrir un fichier PDF et compter le nombre de pages
-    Open PDF          ${pathPDF-cours2}
+    Open PDF          ${pathPDF-cours1}
     ${nb_pages} =     Get Number Of Pages
     ${text} =         Convert To String    ${nb_pages}
     Log To Console    ${\n}Le fichier PDF a ${text} pages.
